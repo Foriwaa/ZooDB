@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zoo Database Visitor Account Creating</title>
+    </head>
+    <body>
+        <h2>Please fill in all mandatory information</h2>
+        <form method="post" action="./createaccount.py" name="Visitor Information">
+            First Name: <input type="text" name="fname" required><br><br>
+            Last Name: <input type="text" name="lname" required><br><br>
+            Address: <input type="text" name="address" required><br><br>
+            City: <input type="text" name="city" required><br><br>
+            State: <input type="text" name="state" required><br><br>
+            Zipcode: <input type="text" name="zipcode" required><br><br>
+            Birthday: <input type="date" name="birthday" required><br><br>
+            Email: <input type="email" name="email" required><br><br>
+            Username: <input type="text" name="username" required>
+            Password: <input type="password" name="password" required><br><br>
+            <input type="submit" value="submit">
+        </form>
+        <a href="{{url_for('login')}}">Login to existing account</a>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Login to your account{% endblock %}
+
+{% block content %}
+<div class = "container">
+    <h1>Hi ZOOPs....</h1>
+    <br/><br/>
+    <form action="/login" method="POST">
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Username" name="user_name">
+        </div>
+        <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1"
+        placeholder="Enter Password" name="pass_word">
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a href="{{url_for('register')}}">Create a new account</a>
+</div>
+  {% endblock %}  
